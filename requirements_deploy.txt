@@ -1,0 +1,27 @@
+# Chemistry Telegram Bot - Render.com Deployment Requirements
+# Optimized for Render.com Python 3.11 environment
+
+# Core dependencies
+requests==2.32.3
+python-telegram-bot==21.8
+python-dotenv==1.0.0
+
+# Image processing
+Pillow==10.4.0
+matplotlib==3.8.4
+numpy==1.26.4
+
+# Chemistry libraries - Render.com compatible versions
+rdkit==2024.3.6
+rdkit-pypi==2022.9.5
+
+# Data processing
+pandas==2.2.2
+
+# 3D visualization
+py3dmol==2.1.0
+
+# System dependencies for Render.com
+setuptools==75.1.0
+wheel==0.44.0
+Cython==3.0.11

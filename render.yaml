@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: chemistry-telegram-bot
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 start_bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: LOG_LEVEL
+        value: INFO
+      - key: MAX_ANIMATION_SIZE
+        value: 5000000
+      - key: ANIMATION_TIMEOUT
+        value: 30
+    disk:
+      name: chemistry-bot-disk
+      mountPath: /opt/render/project/src
+      sizeGB: 1
